@@ -168,9 +168,11 @@ window.onload = () => {
             	} else {
               		/*alert("not in area " + area.area);*/
             	}
-          	})
-        })
-      }
+          	});
+        });
+    }
+	
+	watchuser();
 
 
 
