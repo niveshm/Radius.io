@@ -15,7 +15,7 @@ var centre = new L.LatLng(25.260644, 82.986878); //25.260644, 82.986878
     var polygon = [{
       	placeArea: "lc",
       	/*color:"#d09f5f",*/
-      	area: "lc",
+      	area: "LC",
       	points: [
 	      	new L.LatLng(25.260010, 82.984468),
 	      	new L.LatLng(25.260090, 82.984446),
@@ -38,7 +38,7 @@ var centre = new L.LatLng(25.260644, 82.986878); //25.260644, 82.986878
      	{ 
      		placeArea: "nanda",
 	      	color:"#92AA83",
-	      	area: "nanda",
+	      	area: "NANDA",
 	      	points: [
         	new L.LatLng(25.258341, 82.987868),
 			new L.LatLng(25.258363, 82.987940),
@@ -174,5 +174,5 @@ window.onload = () => {
 	
 	watchuser();
 
-
+}
 
