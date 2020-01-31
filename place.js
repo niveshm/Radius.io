@@ -15,7 +15,7 @@ var centre = new L.LatLng(25.260644, 82.986878); //25.260644, 82.986878
     var polygon = [{
       	placeArea: "lc",
       	/*color:"#d09f5f",*/
-      	area: "LC",
+      	area: "lc",
       	points: [
 	      	new L.LatLng(25.260010, 82.984468),
 	      	new L.LatLng(25.260090, 82.984446),
@@ -38,7 +38,7 @@ var centre = new L.LatLng(25.260644, 82.986878); //25.260644, 82.986878
      	{ 
      		placeArea: "nanda",
 	      	color:"#92AA83",
-	      	area: "NANDA",
+	      	area: "nanda",
 	      	points: [
         	new L.LatLng(25.258341, 82.987868),
 			new L.LatLng(25.258363, 82.987940),
@@ -84,7 +84,7 @@ window.onload = () => {
     polygon.forEach((area)=>{
        	area.placeArea = new L.polygon(area.points,{color: area.color});
        	map.addLayer(area.placeArea);
-      })
+    });
       
       function watchuser(){
       	var posi = [];
@@ -138,6 +138,7 @@ window.onload = () => {
 					            icon.addEventListener('click', clickListener);
 
 					            scene.appendChild(icon);
+					            break;
 				        	}
 				        });
 				        /*loadPlaces(position.coords)
@@ -157,22 +158,23 @@ window.onload = () => {
 				                    scene.appendChild(placeText);
 				                });
 				            })*/
-				    },
+				    };/*,
 				        (err) => console.error('Error in retrieving position', err),
 				        {
 				            enableHighAccuracy: true,
 				            maximumAge: 0,
 				            timeout: 27000,
 				        }
-				    );
+				    );*/
             	} else {
               		/*alert("not in area " + area.area);*/
             	}
           	});
         });
-    }
-	
-	watchuser();
+    };
+
+    watchuser();
 
 }
+
 
