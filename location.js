@@ -57,6 +57,16 @@ var Loca = [];
             new L.LatLng(25.258428, 82.987746)
             ]
         },
+        {
+          placeArea: "Home",
+          area: "Home",
+          points: [
+            new L.LatLng(17.520905, 78.382378),
+            new L.LatLng(17.520659, 78.383816),
+            new L.LatLng(17.519820, 78.383548),
+            new L.LatLng(17.520209, 78.382132)
+          ]
+        }
     ];
 
 var position = [];
@@ -103,6 +113,9 @@ window.onload = () => {
             }
             else if (p == "NANDA") {
                 Loca.push({ placename: "NANDA", latitude: 25.258503, longitude: 82.987808 });
+            }
+            else if(p == "Home") {
+              Loca.push({ placename: "Home", latitude: 17.520322, longitude: 78.382943 });
             }
         });
 
